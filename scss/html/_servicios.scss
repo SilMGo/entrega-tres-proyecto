@@ -1,0 +1,164 @@
+@import "extras/variables";  
+@import "extras/extend.scss";
+/* estilos para page/ servicios  con grid  en pc*/
+
+    h1 {
+        box-shadow: 10px 10px black;
+      
+        margin: 25px;
+
+    }
+             /* estilos para CONTENEDOR con grid pc */
+             .servicioscontenedor{
+                padding: 10px;
+
+                 /* animaciones- gradiente */
+                background-image: linear-gradient(112deg, rgba(29,150,172,1) 15%, rgba(7,91,191,1) 33%, rgba(0,212,255,1) 100%);  
+                 
+                /* propiedades de grid*/
+                display: grid;
+            
+                /* propiedad columnas */
+                grid-template-columns: repeat(3, 1fr);
+            
+                /* propiedad filas*/
+                grid-template-rows: 300px 300px;
+            
+                /* propiedad para los espacios */
+                gap: 10px;
+                
+                justify-items: center;
+                align-items: center;
+                
+            }
+             /* estilos para hijo con grid */
+                 .titulo-uno{
+                      height:100px ;
+                      align-items: center;
+                      
+            }
+/*estilos para celular*/ 
+     @media screen and (max-width:1220px)  {
+                body {
+                    background-color: $color-celular;                     
+                }
+        /* estilos para page/ servicios  con grid  en celular*/
+                .servicioscontenedor{
+                    padding: 10px;
+                    background-color: $color-secundario;
+                    column-gap: 15px;
+                    border-color: rgb(12, 11, 10);
+                    justify-items: center;
+                    align-items: center;
+
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: 300px 300px;
+                
+                    }
+
+                /* estilos para hijo con grid */
+                    .titulo-uno{
+                        height:30px ;
+                        align-items: center;   
+                    }
+                    .servicioscontenedor {
+                    display: grid;
+                    grid-template-areas: 
+                    "titulo-uno titulo-uno"
+                    "titulo-uno titulo-uno"
+                    "img-uno img-dos"
+                    "parrafo-uno parrafo-dos"
+                    "img-tres parrafo-tres"
+                    "parrafo-cuatro parrafo-cinco"
+                    "parrafo-seis parrafo-seis";
+                    gap: 10;
+                    
+        
+                    grid-template-rows: 0.2fr 1fr 0.7fr 0.2fr 0.2fr 0.2fr;
+                    grid-template-columns: 48% 48%;
+                }  
+                .img-uno{
+                    grid-area: img-uno;
+                    
+                    
+
+                }
+                .img-dos{
+                    grid-area: img-dos;
+                }
+                .img-tres{
+                    grid-area: img-tres;
+                }
+                .parrafo-uno{
+                    grid-area: parrafo-uno;
+                    
+                }
+                .parrafo-dos{
+                   grid-area: parrafo-dos; 
+                }
+                .parrafo-tres{
+                    grid-area: parrafo-tres;
+                    border-radius: 3;
+                }
+                .parrafo-cuatro{
+                    grid-area: parrafo-cuatro;
+                }
+                .parrafo-cinco{
+                    grid-area: parrafo-cinco;
+                }
+                .parrafo-seis{
+                    grid-area: parrafo-seis;
+
+                }
+                .titulo-uno{
+                    grid-area: titulo-uno;
+                    width: 20px;
+                    height: 10px;
+                     
+                }
+                 p {
+                    font-size: 10;
+                 }   
+            }
+
+            /* estilos de animación  parrafos */
+            .parrafo-uno:hover{
+                box-shadow: 50px 50px 60px white;
+                transition: 2s;
+                background-color: $color-animacion-uno;
+                border-radius: 10px;
+
+            }
+            .parrafo-dos:hover{
+                box-shadow: 50px 50px 60px white;
+                transition: 2s;
+                background-color: $color-animacion-uno;
+                border-radius: 10px;
+            }
+            .parrafo-tres:hover{
+                box-shadow: 50px 50px 60px white;
+                transition: 2s;
+                background-color: $color-animacion-uno;
+                border-radius: 10px;
+            }
+            .parrafo-cuatro:hover{
+                box-shadow: 50px 50px 60px white;
+                transition: 2s;
+                background-color: $color-animacion-uno;
+                border-radius: 10px;
+            }
+            .parrafo-cinco:hover{
+                box-shadow: 50px 50px 60px white;
+                transition: 2s;
+                background-color: $color-animacion-uno;
+                border-radius: 10px;
+            }
+            .parrafo-seis:hover{
+                box-shadow: 50px 50px 60px white;
+                transition: 2s;
+                background-color: $color-animacion-uno;
+                border-radius: 10px;
+            }
+           
+            

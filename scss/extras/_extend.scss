@@ -1,0 +1,16 @@
+@import "extras/variables";  
+
+	/*uso de extend en a*/	
+%estilo-a {
+    text-decoration: none;	
+color: black;	
+font-family: Arial, Helvetica, sans-serif;	
+font-size: 20px; 
+}
+
+/*uso de extend en page servicios*/	
+@animacion-servicios{
+    box-shadow: 50px 50px 60px white;
+    transition: 2s;
+    background-color: $color-animacion-uno;
+} 

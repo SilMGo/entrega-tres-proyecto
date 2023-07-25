@@ -1,0 +1,45 @@
+@import "extras/variables";  
+
+ /* estilo  en pc -*/
+ @media screen and (min-width:1024px)  {
+
+    display:grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: 300px 300px;
+                
+
+
+ }
+ /* estilo  en pc -*/
+
+ @media screen and (min-width:1024px)  {
+
+   /* estilos para padre con grid */
+   .recomendacion-contenedor { 
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 450px 300px;
+                 }
+
+    
+     /* animaciones  */
+    .consejo-uno{
+    box-shadow: 0px 15px 25px blue;
+    width: 800px;
+    height: 650px;
+    margin: 10px;
+    padding: 30px;
+  }
+  .consejo-dos{
+    box-shadow: 0px 15px 25px blue;
+    width: 800px;
+    height: 650px;
+    padding: 10px;
+  }
+  .consejo-tres{
+    box-shadow: 0px 15px 25px blue;
+    width: 800px;
+    height: 650px;
+    padding: 10px;
+  }
+                                    }

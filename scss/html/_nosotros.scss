@@ -1,0 +1,14 @@
+@import "extras/variables";  
+
+
+@media screen and (min-width:1024px)  {
+
+    /* estilos para padre hoja nosotros con grid */
+    .nosotros-contenedor { 
+       display: grid;
+       grid-template-columns: repeat(2, 45%);
+       grid-template-rows: 500px 500px;
+       column-gap: 35px;
+       row-gap: 100px;
+                  }
+                }
